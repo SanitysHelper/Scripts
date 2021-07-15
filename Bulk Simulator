@@ -1,3 +1,4 @@
+warn("HACKER LOADED")
 game.Workspace.DescendantAdded:Connect(function(v)
 	if v:IsA("TouchTransmitter") and v.Parent.Name == "Gem" then
 		print("Found gem")
