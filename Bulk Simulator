@@ -1,0 +1,32 @@
+game.Workspace.DescendantAdded:Connect(function(v)
+	if v:IsA("TouchTransmitter") and v.Parent.Name == "Gem" then
+		print("Found gem")
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+	end
+	if v:IsA("TouchTransmitter") and v.Parent.Name == "GrenadePickup" then
+		print("Found grenade")
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+	end
+	if v:IsA("TouchTransmitter") and v.Parent.Name == "Black Hole GrenadePickup" then
+		print("Found black hole grenade")
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+	end
+	if v:IsA("TouchTransmitter") and v.Parent.Name == "Sticky BombPickup" then
+		print("Found sticky bomb")
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+	end
+	if v:IsA("TouchTransmitter") and v.Parent.Name == "Plasma GrenadePickup" then
+		warn("Found plasma grenade")
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+	end
+	if v:IsA("TouchTransmitter") and v.Parent.Name:lower():match("meteo") then
+		warn("Found meteroite")
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
+		firetouchinterest(v.Parent, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+	end
+end)
